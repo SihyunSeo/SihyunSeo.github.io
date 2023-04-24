@@ -41,7 +41,7 @@ Personal info option
 }
 .profile{
     border-radius: 50%;
-    margin: 12px 10px;
+    /* margin: 12px 10px; */
     filter: none;
     -webkit-filter: none;
 }
@@ -50,8 +50,8 @@ Personal info option
     width: 100%;
     height: auto;
 }
-.name-tag{font-size: 1.8rem; text-align: center;}
-
+.name-tag{font-size: 1.8rem; text-align: center; padding-top: 1rem;}
+.info-tag{padding: 1rem;}
 /******************
 Project option
 *******************/
