@@ -1,4 +1,10 @@
 @charset "utf-8";
+body {
+    background: #100E17;
+  
+    color:white;
+    font-family: 'Overpass', sans-serif;
+}
 
 /******************
 Grid CSS
@@ -18,7 +24,36 @@ Grid CSS
 .col-12 {-ms-flex: 0 0 100%;flex: 0 0 100%;max-width: 100%;}
 
 /******************
-CSS option
+Style option
+*******************/
+.mg-0{margin: 0 !important;}
+
+/******************
+Personal info option
+*******************/
+.wrap{padding: 3rem;}
+.personal-info{
+    background: #17141d;
+    min-width: 500px;
+    min-height: 500px; 
+    border-radius: 16px;
+    padding: 2rem 4rem;
+}
+.profile{
+    border-radius: 50%;
+    margin: 12px 10px;
+    filter: none;
+    -webkit-filter: none;
+}
+.profile-section{padding: 0 1rem;}
+.profile-img img{
+    width: 100%;
+    height: auto;
+}
+.name-tag{font-size: 1.8rem; text-align: center;}
+
+/******************
+Project option
 *******************/
 
 .mini-card-grid {
@@ -31,12 +66,6 @@ CSS option
     display: flex;
 
     -webkit-overflow-scrolling: touch;
-}
-body {
-  background: #100E17;
-
-  color:white;
-  font-family: 'Overpass', sans-serif;
 }
 
 .mini-card {
@@ -75,14 +104,6 @@ body {
 .mini-card:not(:first-child) {
     margin-left: -130px;
 }
-
-
-
-
-
-
-
-
 
 .mini-article-byline {
     margin: 3rem 0 0;
@@ -162,6 +183,8 @@ a {
 time {
     color: #7a7a8c;
 }
+
+
 
 
 
