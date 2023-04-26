@@ -6,9 +6,9 @@ body {
     font-family: 'Overpass', sans-serif;
 }
 
-/******************
-Grid CSS
-*******************/
+/************************************
+              Grid CSS
+*************************************/
 .row {display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;}
 .col-1 {-ms-flex: 0 0 8.333333%;flex: 0 0 8.333333%;max-width: 8.333333%;}
 .col-2 {-ms-flex: 0 0 16.666667%;flex: 0 0 16.666667%;max-width: 16.666667%;}
@@ -23,14 +23,27 @@ Grid CSS
 .col-11 {-ms-flex: 0 0 91.666667%;flex: 0 0 91.666667%;max-width: 91.666667%;}
 .col-12 {-ms-flex: 0 0 100%;flex: 0 0 100%;max-width: 100%;}
 
-/******************
-Style option
-*******************/
+
+.flex-1{flex: 1;}
+.flex-2{flex: 2;}
+/************************************
+            Style option
+*************************************/
+
+/* margin */
 .mg-0{margin: 0 !important;}
 
-/******************
-Personal info option
-*******************/
+/* padding */
+.pt-10{padding-top: 10px;}
+
+.ps-20{padding: 0 20px;}
+.p-20{padding: 20px;}
+
+/* line-height */
+.lh-25{line-height: 25px;}
+/************************************
+        Personal info option
+*************************************/
 .wrap{padding: 3rem;}
 .personal-info{
     background: #17141d;
@@ -46,24 +59,28 @@ Personal info option
     -webkit-filter: none;
 }
 .profile-section{padding: 0 1rem;}
-.profile-img img{
-    width: 100%;
-    height: auto;
-}
-.name-tag{font-size: 1.8rem; text-align: center; padding-top: 1rem;}
+.name-section{text-align: center;}
+.profile-img img{width: 80%; height: auto;}
+.name-tag{font-size: 1.8rem; text-align: center; padding-top: 1.2rem;}
+.univ-section a{font-size: 1rem; line-height: 25px;}
 .info-tag{padding: 1rem;}
-/******************
-Project option
-*******************/
+.social-icon{width: 20px; height: 20px;}
+.social-text{line-height: 20px;}
+
+.award-wrap{border: 2px solid white; border-radius: 16px;}
+/************************************
+           Project option
+*************************************/
 
 .mini-card-grid {
     scrollbar-color: #201c29;
     scrollbar-width: 10px;
     scrollbar-gutter: always;
-    padding: 3rem;
+    padding: 3rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    overflow-x: hidden;
 
     -webkit-overflow-scrolling: touch;
 }
@@ -74,6 +91,7 @@ Project option
     padding: 1.5rem;
     border-radius: 16px;
     background: #17141d;
+    /* background: #CF2525; */
     -webkit-box-shadow: -1rem 0 3rem #000;
     box-shadow: -1rem 0 3rem #000;
     display: -webkit-box;
@@ -184,7 +202,122 @@ time {
     color: #7a7a8c;
 }
 
+/* --------------------------- */
+.proj-card {
+    position: relative;
+    margin: 0 3vw;
+}
 
+#projects-container { width: 75vw; }
+
+.proj-card-img {
+    width: auto;
+    height:100%;
+    background-repeat: no-repeat;
+}
+
+.proj-card-img img { object-fit: cover; }
+
+.proj-card-info {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    line-height: 1.5;
+}
+
+.proj-card-overlay {
+    position: absolute;
+    left:0; top:0;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+}
+
+.proj-modal { 
+    position:absolute; 
+    width:100%; height:200%; 
+    background: rgba(0,0,0,0.8); 
+    top:0; left:0; 
+    display:none;
+    z-index: 99999999;
+    
+}
+
+.proj-modal-content {
+    width: 65vw; height:auto;
+    max-width: 1000px; max-height: 80vh;
+    background:rgb(37, 37, 37);
+    position:relative;  top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    text-align:center; border-radius: 10px;
+    box-sizing:border-box;
+    line-height:23px; cursor:pointer;
+    overflow: hidden;
+}
+
+.proj-modal-title {
+    position: absolute;
+    left: 50px;
+    bottom: 60px;
+    color:white;
+    font-size:32px;
+    font-family: Noto Sans KR;
+    font-weight: 800;
+    z-index: 999;
+}
+
+.proj-modal-type {
+    position: absolute;
+    left: 60px;
+    bottom: 90px;
+    color:white;
+    font-size:18px;
+    font-family: Noto Sans KR;
+    font-weight: 200;
+    z-index: 999;
+}
+
+.proj-modal-period {
+    position: absolute;
+    right: 60px;
+    bottom: 50px;
+    color:white;
+    font-family: Noto Sans KR;
+    font-weight: 300;
+    z-index: 999;
+}
+.proj-modal-desc {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-family: Noto Sans KR;
+    font-weight: 300;
+    z-index: 999;
+    white-space: pre-line;
+}
+
+.modal-gradient-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0; left: 0;
+    z-index: 1;
+    background: rgb(24,24,24);
+    background: linear-gradient(0deg, rgba(24,24,24,1) 10%, rgba(24,24,24,0.95) 15%, rgba(24,24,24,0.9) 20%, rgba(24,24,24,0.8) 25%, rgba(24,24,24,0.7) 30%, rgba(24,24,24,0.25) 40%, rgba(24,24,24,0) 50%);
+}
+
+.proj-card-sm { font-family: Noto Sans KR; font-size: 1em; font-weight: 200;}
+.proj-card-title { font-family: Noto Sans KR; font-size: 1.5em; font-weight: 400;}
 
 
 

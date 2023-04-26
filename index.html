@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Overpass:100,100i,200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
@@ -14,276 +15,240 @@
         <div class="personal-info">
             <div class="mini-article-meta">
                 <div class="row col-12 mg-0">
-                    <div class="col-2">
+                    <!-- Profile -->
+                    <div class="flex-1">
                         <div class="profile-section">
-                            <a class="profile-img">
-                                <!-- <img alt="" src="/assets/image/profile.jpg" class="profile" height="80" width="80">  -->
-                                <img alt="" src="/assets/image/white.jpeg" class="profile" height="80" width="80"> 
-                            </a>
-                            <div class="name-tag">
-                                <a>Sihyun Seo</a> 
+                            <div class="name-section">
+                                <a class="profile-img">
+                                    <!-- <img alt="" src="/assets/image/profile.jpg" class="profile" height="80" width="80">  -->
+                                    <img alt="" src="/assets/image/white.jpeg" class="profile" height="80" width="80"> 
+                                </a>
+                                <div class="name-tag">
+                                    <a>Sihyun Seo</a> 
+                                </div>
                             </div>
                             <div class="info-tag">
-                                <div>
-                                    <a>CHEONGJU UNIV</a>
+                                <div class="univ-section">
+                                    <a>UNIV</a>
                                     <br/>
                                     <a>Division of Software Converge</a>
                                     <br/>
                                     <a>Major G.P.A : 4.24/4.5</a>
                                 </div>
                                 <hr />
-                                <div>
-                                    <a>sihyun_s@kakao.com</a>
-                                    <br/>
-                                    <a href="https://github.com/SihyunSeo">
-                                        <img alt="" src="/assets/image/github-mark.png" class="" height="80" width="80"> 
-                                        https://github.com/SihyunSeo
-                                    </a>
+                                <div class="col-12 row pt-10">
+                                    <div class="col-2">
+                                        <a>
+                                            <img alt="" src="/assets/image/email-white.png" class="social-icon"> 
+                                        </a>
+                                    </div>
+                                    <div><a class="social-text">sihyun_s@kakao.com</a></div>
+                                </div>
+                                <div class="col-12 row pt-10">
+                                    <div class="col-2">
+                                        <a href="https://github.com/SihyunSeo">
+                                            <img alt="" src="/assets/image/github-mark-white.png" class="social-icon"> 
+                                        </a>
+                                    </div>
+                                    <div><a class="social-text">https://github.com/SihyunSeo</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-8">
-                        <div class="author-name-prefix">
-                            Author
+
+                    <!-- Career -->
+                    <div class="flex-1 ps-20">
+                        <div class="award-wrap p-20">
+                            Info
                         </div>
-                        <a class="author-name">
-                            Mark Root-Wiley 
-                        </a>
+                    </div>
+
+                    <!-- Awards -->
+                    <div class="flex-2 ps-20">
+                        <legend style="color:blue;font-weight:bold;">General Information</legend>
+                        <div class="award-wrap p-20 lh-25">
+                            ○ Grand prize, 2022 M-CJU A Youth Start-up Festa, Cheongju Univ
+                            <br/>
+                            ○ Excellence prize, 2022 M-CJU A Youth Start-up Item Competition, Cheongju Univ
+                            <br/>
+                            ○ Grand prize, 2022 Chungbuk ICT Performance Presentation
+                            <br/>
+                            ○ Grand prize, Artificial Intelligence Software Major Performance Presentation, Cheongju Univ
+                            <br/>
+                            ○ Grand prize, 2022 Chungcheongbuk-do Public Data Startup Competition
+                            <br/>
+                            ○ Excellence prize, 10th Prototype Performance Exhibition, Cheongju Univ
+                            <br/>
+                            ○ Excellence prize, Realistic Content XR Capstone Design Competition
+                            <br/>
+                            ○ Participation prize, 9th K-Hackathon Competition
+                            <br/>
+                            ○ Excellence prize, 2021 Chungcheongbuk-do Public Data Startup Competition
+                            <br/>
+                            ○ Participation prize, Adventure Design Competition, Cheongju Univ
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="mini-card-grid">
+            <article class="mini-card module module-article article" id="mini-post-291626">
+                <header class="mini-article-card-header">
+                    <div class="mini-article-card-title">
+                        <div class="mini-article-subhead">
+                        Project
+                        <time datetime="2019-06-24">
+                        April 25, 2023 </time>
+                        </div>
+                        <h2 class="">
+                            <a href="#" class="article-card-header read-article">
+                                Developing Diet Supporting Service for Diabetes Patients through Deep Learning Image Analysis
+                            </a>
+                        </h2>
+                    </div>
+                </header>
+                <div class="mini-article-meta">
+                    <div class="mini-article-byline">
+                        <div class="author-name-area">
+                            <img alt="" src="/assets/image/aidang_login.png" class="profile" height="80" width="80"> 
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <a href="https://css-tricks.com/tag/css-grid/" rel="tag">proj info</a> 
+                    </div>
+                </div>
+            </article>
+            <article class="mini-card module module-article article" id="mini-post-291626">
+                <header class="mini-article-card-header">
+                    <div class="mini-article-card-title">
+                        <div class="mini-article-subhead">
+                        Project
+                        <time datetime="2019-06-24">
+                        April 25, 2023 </time>
+                        </div>
+                        <h2 class="">
+                            <a href="#" class="article-card-header read-article">
+                                Developing Diet Supporting Service for Diabetes Patients through Deep Learning Image Analysis
+                            </a>
+                        </h2>
+                    </div>
+                </header>
+                <div class="mini-article-meta">
+                    <div class="mini-article-byline">
+                        <div class="author-name-area">
+                            <img alt="" src="/assets/image/aidang_login.png" class="profile" height="80" width="80"> 
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <a href="https://css-tricks.com/tag/css-grid/" rel="tag">proj info</a> 
+                    </div>
+                </div>
+            </article>
+            <article class="mini-card module module-article article" id="mini-post-291626">
+                <header class="mini-article-card-header">
+                    <div class="mini-article-card-title">
+                        <div class="mini-article-subhead">
+                        Project
+                        <time datetime="2019-06-24">
+                        April 25, 2023 </time>
+                        </div>
+                        <h2 class="">
+                            <a href="#" class="article-card-header read-article">
+                                Developing Diet Supporting Service for Diabetes Patients through Deep Learning Image Analysis
+                            </a>
+                        </h2>
+                    </div>
+                </header>
+                <div class="mini-article-meta">
+                    <div class="mini-article-byline">
+                        <div class="author-name-area">
+                            <img alt="" src="/assets/image/aidang_login.png" class="profile" height="80" width="80"> 
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <a href="https://css-tricks.com/tag/css-grid/" rel="tag">proj info</a> 
+                    </div>
+                </div>
+            </article>
+            <article class="mini-card module module-article article" id="mini-post-291626">
+                <header class="mini-article-card-header">
+                    <div class="mini-article-card-title">
+                        <div class="mini-article-subhead">
+                        Project
+                        <time datetime="2019-06-24">
+                        April 25, 2023 </time>
+                        </div>
+                        <h2 class="">
+                            <a href="#" class="article-card-header read-article">
+                                Developing Diet Supporting Service for Diabetes Patients through Deep Learning Image Analysis
+                            </a>
+                        </h2>
+                    </div>
+                </header>
+                <div class="mini-article-meta">
+                    <div class="mini-article-byline">
+                        <div class="author-name-area">
+                            <img alt="" src="/assets/image/aidang_login.png" class="profile" height="80" width="80"> 
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <a href="https://css-tricks.com/tag/css-grid/" rel="tag">proj info</a> 
+                    </div>
+                </div>
+            </article>
+            <article class="mini-card module module-article article" id="mini-post-291626">
+                <header class="mini-article-card-header">
+                    <div class="mini-article-card-title">
+                        <div class="mini-article-subhead">
+                        Project
+                        <time datetime="2019-06-24">
+                        April 25, 2023 </time>
+                        </div>
+                        <h2 class="">
+                            <a href="#" class="article-card-header read-article">
+                                Developing Diet Supporting Service for Diabetes Patients through Deep Learning Image Analysis
+                            </a>
+                        </h2>
+                    </div>
+                </header>
+                <div class="mini-article-meta">
+                    <div class="mini-article-byline">
+                        <div class="author-name-area">
+                            <img alt="" src="/assets/image/aidang_login.png" class="profile" height="80" width="80"> 
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <a href="https://css-tricks.com/tag/css-grid/" rel="tag">proj info</a> 
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="proj-modal">
+            <div class="proj-modal-content">
+                <div class="modal-gradient-overlay"></div>
+                <span class="proj-modal-title">test_title</span>
+                <span class="proj-modal-type">test_type</span>
+            </div>
+        </div>
     </div>
-    <div class="mini-card-grid">
-        <article class="mini-card module module-article article" id="mini-post-291626">
-            <header class="mini-article-card-header">
-                <div class="mini-article-card-title">
-                    <div class="mini-article-subhead">
-                    Article
-                    <time datetime="2019-06-24">
-                    Jun 24, 2019 </time>
-                    </div>
-                    <h2 class="">
-                        <a href="https://css-tricks.com/building-a-conference-schedule-with-css-grid/" class="article-card-header read-article">
-                        Building a Conference Schedule with CSS Grid </a>
-                    </h2>
-                </div>
-            </header>
-            <div class="mini-article-meta">
-                <div class="mini-article-byline">
-                    <div class="author-avatar">
-                        <a class="author-name" href="https://css-tricks.com/author/mrwweb/">
-                            <img alt="" src="https://secure.gravatar.com/avatar/1d4925cfe7b4025037be5038af7d4292?s=80&amp;d=retro&amp;r=pg" srcset="https://secure.gravatar.com/avatar/1d4925cfe7b4025037be5038af7d4292?s=160&amp;d=retro&amp;r=pg 2x" class="avatar avatar-80 photo" height="80" width="80"> 
-                        </a>
-                        <svg class="half-circle" width="80px" height="80px">
-                        <use xlink:href="#half-circle"></use>
-                        </svg>
-                    </div>
-                    <div class="author-name-area">
-                        <div class="author-name-prefix">
-                            Author
-                        </div>
-                        <a class="author-name" href="https://css-tricks.com/author/mrwweb/">
-                        Mark Root-Wiley 
-                        </a>
-                    </div>
-                </div>
-                <div class="tags">
-                    <a href="https://css-tricks.com/tag/css-grid/" rel="tag">css grid</a> 
-                </div>
-            </div>
-        </article>
-        <article class="mini-card module module-article article" id="mini-post-291626">
-            <header class="mini-article-card-header">
-                <div class="mini-article-card-title">
-                    <div class="mini-article-subhead">
-                    Article
-                    <time datetime="2019-06-24">
-                    Jun 24, 2019 </time>
-                    </div>
-                    <h2 class="">
-                        <a href="https://css-tricks.com/building-a-conference-schedule-with-css-grid/" class="article-card-header read-article">
-                        Building a Conference Schedule with CSS Grid </a>
-                    </h2>
-                </div>
-            </header>
-            <div class="mini-article-meta">
-                <div class="mini-article-byline">
-                    <div class="author-avatar">
-                        <a class="author-name" href="https://css-tricks.com/author/mrwweb/">
-                            <img alt="" src="https://secure.gravatar.com/avatar/1d4925cfe7b4025037be5038af7d4292?s=80&amp;d=retro&amp;r=pg" srcset="https://secure.gravatar.com/avatar/1d4925cfe7b4025037be5038af7d4292?s=160&amp;d=retro&amp;r=pg 2x" class="avatar avatar-80 photo" height="80" width="80"> 
-                        </a>
-                        <svg class="half-circle" width="80px" height="80px">
-                        <use xlink:href="#half-circle"></use>
-                        </svg>
-                    </div>
-                    <div class="author-name-area">
-                        <div class="author-name-prefix">
-                            Author
-                        </div>
-                        <a class="author-name" href="https://css-tricks.com/author/mrwweb/">
-                        Mark Root-Wiley 
-                        </a>
-                    </div>
-                </div>
-                <div class="tags">
-                    <a href="https://css-tricks.com/tag/css-grid/" rel="tag">css grid</a> 
-                </div>
-            </div>
-        </article>
-        <article class="mini-card module module-article article" id="mini-post-291626">
-            <header class="mini-article-card-header">
-                <div class="mini-article-card-title">
-                    <div class="mini-article-subhead">
-                    Article
-                    <time datetime="2019-06-24">
-                    Jun 24, 2019 </time>
-                    </div>
-                    <h2 class="">
-                        <a href="https://css-tricks.com/building-a-conference-schedule-with-css-grid/" class="article-card-header read-article">
-                        Building a Conference Schedule with CSS Grid </a>
-                    </h2>
-                </div>
-            </header>
-            <div class="mini-article-meta">
-                <div class="mini-article-byline">
-                    <div class="author-avatar">
-                        <a class="author-name" href="https://css-tricks.com/author/mrwweb/">
-                            <img alt="" src="https://secure.gravatar.com/avatar/1d4925cfe7b4025037be5038af7d4292?s=80&amp;d=retro&amp;r=pg" srcset="https://secure.gravatar.com/avatar/1d4925cfe7b4025037be5038af7d4292?s=160&amp;d=retro&amp;r=pg 2x" class="avatar avatar-80 photo" height="80" width="80"> 
-                        </a>
-                        <svg class="half-circle" width="80px" height="80px">
-                        <use xlink:href="#half-circle"></use>
-                        </svg>
-                    </div>
-                    <div class="author-name-area">
-                        <div class="author-name-prefix">
-                            Author
-                        </div>
-                        <a class="author-name" href="https://css-tricks.com/author/mrwweb/">
-                        Mark Root-Wiley 
-                        </a>
-                    </div>
-                </div>
-                <div class="tags">
-                    <a href="https://css-tricks.com/tag/css-grid/" rel="tag">css grid</a> 
-                </div>
-            </div>
-        </article>
-        <article class="mini-card module module-article article" id="mini-post-291626">
-            <header class="mini-article-card-header">
-                <div class="mini-article-card-title">
-                    <div class="mini-article-subhead">
-                    Article
-                    <time datetime="2019-06-24">
-                    Jun 24, 2019 </time>
-                    </div>
-                    <h2 class="">
-                        <a href="https://css-tricks.com/building-a-conference-schedule-with-css-grid/" class="article-card-header read-article">
-                        Building a Conference Schedule with CSS Grid </a>
-                    </h2>
-                </div>
-            </header>
-            <div class="mini-article-meta">
-                <div class="mini-article-byline">
-                    <div class="author-avatar">
-                        <a class="author-name" href="https://css-tricks.com/author/mrwweb/">
-                            <img alt="" src="https://secure.gravatar.com/avatar/1d4925cfe7b4025037be5038af7d4292?s=80&amp;d=retro&amp;r=pg" srcset="https://secure.gravatar.com/avatar/1d4925cfe7b4025037be5038af7d4292?s=160&amp;d=retro&amp;r=pg 2x" class="avatar avatar-80 photo" height="80" width="80"> 
-                        </a>
-                        <svg class="half-circle" width="80px" height="80px">
-                        <use xlink:href="#half-circle"></use>
-                        </svg>
-                    </div>
-                    <div class="author-name-area">
-                        <div class="author-name-prefix">
-                            Author
-                        </div>
-                        <a class="author-name" href="https://css-tricks.com/author/mrwweb/">
-                        Mark Root-Wiley 
-                        </a>
-                    </div>
-                </div>
-                <div class="tags">
-                    <a href="https://css-tricks.com/tag/css-grid/" rel="tag">css grid</a> 
-                </div>
-            </div>
-        </article>
-        <article class="mini-card module module-article article" id="mini-post-291626">
-            <header class="mini-article-card-header">
-                <div class="mini-article-card-title">
-                    <div class="mini-article-subhead">
-                    Article
-                    <time datetime="2019-06-24">
-                    Jun 24, 2019 </time>
-                    </div>
-                    <h2 class="">
-                        <a href="https://css-tricks.com/building-a-conference-schedule-with-css-grid/" class="article-card-header read-article">
-                        Building a Conference Schedule with CSS Grid </a>
-                    </h2>
-                </div>
-            </header>
-            <div class="mini-article-meta">
-                <div class="mini-article-byline">
-                    <div class="author-avatar">
-                        <a class="author-name" href="https://css-tricks.com/author/mrwweb/">
-                            <img alt="" src="https://secure.gravatar.com/avatar/1d4925cfe7b4025037be5038af7d4292?s=80&amp;d=retro&amp;r=pg" srcset="https://secure.gravatar.com/avatar/1d4925cfe7b4025037be5038af7d4292?s=160&amp;d=retro&amp;r=pg 2x" class="avatar avatar-80 photo" height="80" width="80"> 
-                        </a>
-                        <svg class="half-circle" width="80px" height="80px">
-                        <use xlink:href="#half-circle"></use>
-                        </svg>
-                    </div>
-                    <div class="author-name-area">
-                        <div class="author-name-prefix">
-                            Author
-                        </div>
-                        <a class="author-name" href="https://css-tricks.com/author/mrwweb/">
-                        Mark Root-Wiley 
-                        </a>
-                    </div>
-                </div>
-                <div class="tags">
-                    <a href="https://css-tricks.com/tag/css-grid/" rel="tag">css grid</a> 
-                </div>
-            </div>
-        </article>
-        <article class="mini-card module module-article article" id="mini-post-291626">
-            <header class="mini-article-card-header">
-                <div class="mini-article-card-title">
-                    <div class="mini-article-subhead">
-                    Article
-                    <time datetime="2019-06-24">
-                    Jun 24, 2019 </time>
-                    </div>
-                    <h2 class="">
-                        <a href="https://css-tricks.com/building-a-conference-schedule-with-css-grid/" class="article-card-header read-article">
-                        Building a Conference Schedule with CSS Grid </a>
-                    </h2>
-                </div>
-            </header>
-            <div class="mini-article-meta">
-                <div class="mini-article-byline">
-                    <div class="author-avatar">
-                        <a class="author-name" href="https://css-tricks.com/author/mrwweb/">
-                            <img alt="" src="https://secure.gravatar.com/avatar/1d4925cfe7b4025037be5038af7d4292?s=80&amp;d=retro&amp;r=pg" srcset="https://secure.gravatar.com/avatar/1d4925cfe7b4025037be5038af7d4292?s=160&amp;d=retro&amp;r=pg 2x" class="avatar avatar-80 photo" height="80" width="80"> 
-                        </a>
-                        <svg class="half-circle" width="80px" height="80px">
-                        <use xlink:href="#half-circle"></use>
-                        </svg>
-                    </div>
-                    <div class="author-name-area">
-                        <div class="author-name-prefix">
-                            Author
-                        </div>
-                        <a class="author-name" href="https://css-tricks.com/author/mrwweb/">
-                        Mark Root-Wiley 
-                        </a>
-                    </div>
-                </div>
-                <div class="tags">
-                    <a href="https://css-tricks.com/tag/css-grid/" rel="tag">css grid</a> 
-                </div>
-            </div>
-        </article>
-    </div>
+    <script>
+        $(document).ready(function(){
+            $(".mini-card").click(function(){
+                console.log('what?');
+                $(".proj-modal").fadeIn();
+                $(".proj-modal").on('scroll touchmove mousewheel', function(event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    return false;
+                });
+            });
+
+            $(".proj-modal").click(function(){
+                $(".proj-modal").fadeOut();
+                $(".proj-modal").off('scroll touchmove mousewheel'); // 터치무브 및 마우스휠 스크롤 가능
+            });
+        })
+    </script>
 </body>
+
 </html>
