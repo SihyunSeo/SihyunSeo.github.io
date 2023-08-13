@@ -29,19 +29,23 @@ body {
 /************************************
             Style option
 *************************************/
-
 /* margin */
 .mg-0{margin: 0 !important;}
 
 .mt-20{margin-top: 20px;}
 
 /* padding */
-.pt-10{padding-top: 10px;}
 .ps-20{padding: 0 20px;}
+.pt-5{padding-top: 5px;}
+.pt-10{padding-top: 10px;}
+
+.pb-20{padding-bottom: 20px;}
 .p-20{padding: 20px;}
+.p-10{padding: 10px;}
 
 /* line-height */
 .lh-25{line-height: 25px;}
+
 /************************************
         Personal info option
 *************************************/
@@ -136,15 +140,6 @@ body {
     margin: 1rem 0 2rem;
     padding: .5rem 0 1rem;
     line-height: 1.8;
-}
-a:not(.button):not(.commentPreviewButton):not(.comment-reply-link):focus, a:not(.button):not(.commentPreviewButton):not(.comment-reply-link):hover {
-    background: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#da1b60));
-    background: linear-gradient(to right,#ff8a00,#da1b60);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    text-shadow: none;
 }
 .mini-card h2 {
     font-size: 20px;
