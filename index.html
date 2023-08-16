@@ -20,8 +20,8 @@
                         <div class="profile-section">
                             <div class="name-section">
                                 <a class="profile-img">
-                                    <!-- <img alt="" src="/assets/image/profile.jpg" class="profile" height="80" width="80">  -->
                                     <img alt="" src="/assets/image/profile.jpg" class="profile" height="80" width="80"> 
+                                    <!-- <img alt="" src="/assets/image/white.jpeg" class="profile" height="80" width="80">  -->
                                 </a>
                                 <div class="name-tag">
                                     <a>Sihyun Seo</a> 
@@ -50,7 +50,7 @@
                                             <img alt="" src="/assets/image/github-mark-white.png" class="social-icon"> 
                                         </a>
                                     </div>
-                                    <div><a class="social-text">https://github.com/SihyunSeo</a></div>
+                                    <div><a class="social-text" href="https://github.com/SihyunSeo">https://github.com/SihyunSeo</a></div>
                                 </div>
                             </div>
                         </div>
@@ -94,7 +94,7 @@
 
                     <!-- Awards -->
                     <div class="flex-2 p-10">
-                        <legend style="color:white;font-weight:bold;font-size:2rem;">General Information</legend>
+                        <legend style="color:white;font-weight:bold;font-size:2rem;">Awards</legend>
                         <div class="award-wrap p-20 lh-25 mt-20">
                             ○&nbsp;&nbsp;&nbsp;&nbsp;Participation prize, 2023 Chungcheongbuk-do Public Data Startup Competition
                             <br/>
@@ -133,9 +133,9 @@
                 <header class="mini-article-card-header">
                     <div class="mini-article-card-title">
                         <div class="mini-article-subhead">
-                        Project
-                        <time datetime="2019-06-24">
-                        April 25, 2023 </time>
+                            <time datetime="2019-06-24">
+                                Aug, 2021 
+                            </time>
                         </div>
                         <h2 class="">
                             <a href="#" class="article-card-header read-article">
@@ -160,9 +160,9 @@
                 <header class="mini-article-card-header">
                     <div class="mini-article-card-title">
                         <div class="mini-article-subhead">
-                        Project
-                        <time datetime="2019-06-24">
-                        April 25, 2023 </time>
+                            <time datetime="2019-06-24">
+                                Nov, 2021 
+                            </time>
                         </div>
                         <h2 class="">
                             <a href="#" class="article-card-header read-article">
@@ -187,9 +187,9 @@
                 <header class="mini-article-card-header">
                     <div class="mini-article-card-title">
                         <div class="mini-article-subhead">
-                        Project
-                        <time datetime="2019-06-24">
-                        April 25, 2023 </time>
+                            <time datetime="2019-06-24">
+                                Apr, 2022 
+                            </time>
                         </div>
                         <h2 class="">
                             <a href="#" class="article-card-header read-article">
@@ -214,9 +214,9 @@
                 <header class="mini-article-card-header">
                     <div class="mini-article-card-title">
                         <div class="mini-article-subhead">
-                        Project
-                        <time datetime="2019-06-24">
-                        April 25, 2023 </time>
+                            <time datetime="2019-06-24">
+                                Dec, 2022 
+                            </time>
                         </div>
                         <h2 class="">
                             <a href="#" class="article-card-header read-article">
@@ -241,9 +241,9 @@
                 <header class="mini-article-card-header">
                     <div class="mini-article-card-title">
                         <div class="mini-article-subhead">
-                        Project
-                        <time datetime="2019-06-24">
-                        Aug, 2023 </time>
+                            <time datetime="2019-06-24">
+                                Aug, 2023 
+                            </time>
                         </div>
                         <h2 class="">
                             <a href="#" class="article-card-header read-article">
@@ -264,6 +264,7 @@
                 </div>
             </article>
         </div>
+        
         <div class="proj-modal">
             <div class="proj-modal-content">
                 <div class="modal-gradient-overlay"></div>
@@ -275,7 +276,6 @@
     <script>
         $(document).ready(function(){
             $(".mini-card").click(function(){
-                console.log('what?');
                 $(".proj-modal").fadeIn();
                 $(".proj-modal").on('scroll touchmove mousewheel', function(event) {
                     event.preventDefault();
