@@ -248,10 +248,9 @@ time {
 }
 
 .proj-modal-content {
-    width: 65vw; height:auto;
-    max-width: 1000px; max-height: 80vh;
+    width: 70vw; height:85vh;
     background:rgb(37, 37, 37);
-    position:relative;  top:50%; left:50%;
+    position:relative;  top:40%; left:50%;
     transform: translate(-50%, -50%);
     text-align:center; border-radius: 10px;
     box-sizing:border-box;
