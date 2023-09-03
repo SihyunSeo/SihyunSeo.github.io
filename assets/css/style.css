@@ -248,7 +248,7 @@ time {
 }
 
 .proj-modal-content {
-    width: 70vw; height:85vh;
+    width: 70vw; height:81vh;
     background:rgb(37, 37, 37);
     position:relative;  top:40%; left:50%;
     transform: translate(-50%, -50%);
