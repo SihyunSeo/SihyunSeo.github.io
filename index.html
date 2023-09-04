@@ -263,6 +263,11 @@
 
                 $(".proj-modal-content").html('<img alt="" src="'+img_src+'" class="profile" height="auto" width="100%" style="border-radius: unset;">');
 
+                var div = $(".proj-modal-content");
+                div.css("position", "absolute");
+                div.css("top", Math.max(0, (($(window).height() - div.outerHeight()) / 2) + $(window).scrollTop()) + "px");
+                div.css("left", Math.max(0, (($(window).width() - div.outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+
                 $(".proj-modal").fadeIn();
                 $(".proj-modal").on('scroll touchmove mousewheel', function(event) {
                     event.preventDefault();
